@@ -5,7 +5,7 @@
         grid-template-columns: 1fr 1fr;
         position: absolute;
         z-index: 200;
-        bottom: 10px; 
+        bottom: 50%; 
         right: 10px;  
 
 
@@ -33,6 +33,7 @@
         transition: transform 0.3s;  
         font-size: 1rem;
         font-weight: 900;
+       
       }
       
       .days_child{
@@ -40,16 +41,35 @@
         display: flex;
         text-align: center;
         align-items: center;
+        background-color: transparent; 
+        position: relative; 
+
+
       }
-      .days_child1 {
-        background-color: #e74c3c;   
-      }
-      .days_child2 {
-        background-color: #2ecc71;   
-      }
-      .days_child3 {
-        background-color: #f1c40f;   
-      }
+
+
+      
+      .days_child::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  padding: 7px; /* Adjust padding for border thickness */
+  background: conic-gradient(from 180deg at 50% 50%, #F714D7 0deg, #7C1866 360deg);;
+  -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+  mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+
+      
       
       /* Hover effect */
       .days_child:hover {
@@ -69,5 +89,9 @@
             width: 50px;
             height: 50px;
             font-size: 1.5rem;
+        }
+        .days{
+          position: fixed;
+          bottom: 10px;
         }
       }

@@ -1,0 +1,43 @@
+In Bootstrap, you can apply text colors using predefined utility classes. These classes make it easy to style text without writing custom CSS.
+
+### Examples of Text Color Classes:
+1. **Basic Text Colors**:
+   ```html
+   <p class="text-primary">This is primary-colored text.</p>
+   <p class="text-secondary">This is secondary-colored text.</p>
+   <p class="text-success">This is success-colored text.</p>
+   <p class="text-danger">This is danger-colored text.</p>
+   <p class="text-warning">This is warning-colored text.</p>
+   <p class="text-info">This is info-colored text.</p>
+   <p class="text-light bg-dark">This is light-colored text (use with dark background).</p>
+   <p class="text-dark">This is dark-colored text.</p>
+   <p class="text-muted">This is muted-colored text.</p>
+   <p class="text-white bg-dark">This is white-colored text (use with dark background).</p>
+   ```
+
+2. **Custom Opacity with Bootstrap Utilities**:
+   You can combine the `text-*` classes with opacity utilities for a more transparent text color:
+   ```html
+   <p class="text-primary text-opacity-75">This is primary text with 75% opacity.</p>
+   <p class="text-danger text-opacity-50">This is danger text with 50% opacity.</p>
+   ```
+
+3. **Responsive Text Colors**:
+   Use responsive variants to change text color based on screen size:
+   ```html
+   <p class="text-primary text-md-danger text-lg-success">
+     This text is primary by default, danger on medium screens, and success on large screens.
+   </p>
+   ```
+
+4. **Background Complement**:
+   To ensure proper contrast, combine text color with complementary background utilities:
+   ```html
+   <p class="bg-primary text-white p-3">Primary background with white text.</p>
+   ```
+
+### Notes:
+- These classes are predefined in Bootstrap and adapt to the theme’s color scheme.
+- You can customize Bootstrap colors by overriding them in the SASS or using a custom theme.
+
+For further details, check the [Bootstrap Typography Utilities Documentation](https://getbootstrap.com/docs/).

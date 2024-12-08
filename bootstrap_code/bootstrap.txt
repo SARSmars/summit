@@ -1,0 +1,76 @@
+In Bootstrap, you can use classes to quickly add borders to your elements without writing custom CSS. Here's a guide to the available border classes:
+
+### Basic Border Classes:
+1. **Add a Border**:
+   ```html
+   <div class="border">This has a border</div>
+   ```
+
+2. **Add Border Colors**:
+   ```html
+   <div class="border border-primary">Primary Border</div>
+   <div class="border border-secondary">Secondary Border</div>
+   <div class="border border-success">Success Border</div>
+   <div class="border border-danger">Danger Border</div>
+   <div class="border border-warning">Warning Border</div>
+   <div class="border border-info">Info Border</div>
+   <div class="border border-light">Light Border</div>
+   <div class="border border-dark">Dark Border</div>
+   ```
+
+3. **Remove Border**:
+   ```html
+   <div class="border border-0">No Border</div>
+   ```
+
+---
+
+### Border Sizes:
+1. **Border Widths**:
+   ```html
+   <div class="border border-1">Border Width 1px</div>
+   <div class="border border-2">Border Width 2px</div>
+   <div class="border border-3">Border Width 3px</div>
+   <div class="border border-4">Border Width 4px</div>
+   <div class="border border-5">Border Width 5px</div>
+   ```
+
+---
+
+### Rounded Borders:
+1. **Rounded Corners**:
+   ```html
+   <div class="border rounded">Fully Rounded Corners</div>
+   ```
+
+2. **Specific Rounding**:
+   ```html
+   <div class="border rounded-top">Rounded Top</div>
+   <div class="border rounded-right">Rounded Right</div>
+   <div class="border rounded-bottom">Rounded Bottom</div>
+   <div class="border rounded-left">Rounded Left</div>
+   <div class="border rounded-circle">Circle Border</div>
+   <div class="border rounded-pill">Pill-Shaped Border</div>
+   ```
+
+3. **Remove Rounding**:
+   ```html
+   <div class="border rounded-0">No Rounding</div>
+   ```
+
+---
+
+### Example Combining Borders:
+```html
+<div class="border border-primary rounded-pill p-3">
+  This has a primary border and pill-rounded corners.
+</div>
+```
+
+---
+
+### Additional Customizations:
+- Use padding (`p-*`) and margin (`m-*`) classes to adjust spacing inside or outside the border.
+- Combine border classes with utility classes to create unique styles.
+
+**Tip:** Visit the official [Bootstrap Borders Documentation](https://getbootstrap.com/docs/) for more details and examples.

@@ -3,7 +3,8 @@
 Competition
 ========== */
 #competition{
-  background-color: black;
+  /* background-color: black; */
+  background-color: transparent;
 }
 #competition .competition_card{
   background-color: #50455B;
@@ -22,14 +23,13 @@ Competition
 
 /* screen */
 
-#screen{
-    background-color: #750cff;
-}
+
 .competition_card_container{
   padding: 2px;
   display: flex;
   flex-direction: column;
   height: 50vh; 
+  overflow-x: hidden;
 }
 
 .competition_image{
@@ -40,8 +40,35 @@ Competition
   align-items: center;
   justify-content: center;
   border-radius: 0.25rem;
+  /* animation: slideIn 1.5s ease-out forwards; */
+  /* transform: translateX(-101%); */
     
 }
+#screen{
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+ 
+
+}
+
+
+/* <div style=" background-image: url(https://via.placeholder.com/300x200);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;"> */
+#screen p{
+  color: black;
+}
+/* .animate {
+  border: 1px solid red;
+} */
+
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+  }
+}
+
 
 .competition_image img{
  
@@ -65,7 +92,12 @@ align-items: center;
   font-size: var();
 }
 
-
+.active_bg{
+  background-image: url('../images/competition_main/D_bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 
 /* Style the button container */
@@ -125,6 +157,10 @@ align-items: center;
       flex: 1;
       width: 49;
       height: 1005;
+      }
+      
+      #screen p{
+        color: black;
       }
       
   }
